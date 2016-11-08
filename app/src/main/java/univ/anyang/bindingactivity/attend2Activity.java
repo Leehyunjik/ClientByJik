@@ -20,7 +20,7 @@ import static univ.anyang.bindingactivity.LoginActivity.msghandler;
 
 
 public class attend2Activity extends Activity{
-
+//asdf
     LocalService mService;
     boolean mBound = false;
     Intent intent;
