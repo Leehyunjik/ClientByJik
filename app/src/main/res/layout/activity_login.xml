@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_binding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="univ.anyang.bindingactivity.LoginActivity"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="top"
+        android:background="#27409a"/>
+
+    <ImageView
+        android:layout_width="191dp"
+        android:layout_height="100dp"
+        android:id="@+id/Homepage"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ayu_logo"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="HomepageButton" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#e4e4e4"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:hint="학번을 입력해주세요"
+            android:textColorHint="#ffe4e4e4"
+            android:id="@+id/editText_id"
+            android:background="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            android:text="201131046" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColorHint="#ffe4e4e4"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText_pw"
+            android:background="#ffffff"
+            android:layout_below="@+id/editText_id"
+            android:layout_alignLeft="@+id/editText_id"
+            android:layout_alignStart="@+id/editText_id"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000000"
+            android:text="2" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:text="확      인"
+            android:id="@+id/btn_send"
+            android:layout_below="@+id/editText_pw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="#27409a"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColorHighlight="#004fff"
+            android:layout_marginLeft="20dp"
+            android:textColorHint="#004fff"
+            android:textColorLink="#004fff"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_send"
+            android:layout_marginLeft="40dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID 저장"
+                android:id="@+id/checkBox_IDsave"
+                android:layout_below="@+id/btn_send"
+                android:layout_centerHorizontal="true"
+                android:checked="false"
+                android:layout_weight="1"
+                android:elevation="14dp" />
+
+            <CheckBox
+                android:text="P/W 저장"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox_PWsave"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

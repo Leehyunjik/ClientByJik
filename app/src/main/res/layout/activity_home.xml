@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_binding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="univ.anyang.bindingactivity.LoginActivity"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="top"
+        android:background="#27409a"/>
+
+    <ImageView
+        android:layout_width="191dp"
+        android:layout_height="100dp"
+        android:id="@+id/Homepage"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ayu_logo"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="HomepageButton" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/ic_action_name"
+
+            android:id="@+id/img_attend"
+            android:layout_weight="0.15"
+            android:background="#26409a"
+            android:scaleType="fitStart"
+            android:layout_marginTop="10dp"
+            android:onClick="onClick" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/clock"
+
+            android:id="@+id/img_attendcheck"
+            android:layout_weight="0.15"
+            android:background="#26409a"
+            android:scaleType="fitStart"
+            android:layout_marginTop="30px"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/timetable"
+
+            android:id="@+id/img_timetable"
+            android:layout_weight="0.15"
+            android:background="#26409a"
+            android:scaleType="fitStart"
+            android:layout_marginTop="30px"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/setting"
+
+            android:id="@+id/imageView6"
+            android:layout_weight="0.15"
+            android:background="#26409a"
+            android:scaleType="fitStart"
+            android:layout_marginTop="30px"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/notice"
+
+            android:id="@+id/img_notice"
+            android:layout_weight="0.15"
+            android:background="#26409a"
+            android:scaleType="fitStart"
+            android:layout_marginTop="30px"
+            android:layout_marginBottom="-300px"/>
+    </LinearLayout>
+
+</LinearLayout>
